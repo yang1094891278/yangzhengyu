@@ -121,3 +121,6 @@
 # #更新 update()
 # a.update(name = "你好")
 # print(a)
+# #数组和字典的删除 del
+# del a["name"]
+# print(a)
