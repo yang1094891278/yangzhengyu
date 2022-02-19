@@ -62,3 +62,37 @@
 # print(b[1])
 # #取出a里面的2
 # print(b[0][1])
+
+
+#元组和数组的区别 一旦写好后元组不能修好 数组可以修改
+#数组
+a =  [1,2,3,"你好",True,2,3]
+print(a[4])
+#方法
+#1、追加数据  在尾巴上追加
+a.append("append")
+print(a)
+#2、count（）统计某个值个数和index（）查找某个值下标
+#下标是就近原则 显示   index()里面只能有一个值
+print(a.count(2))
+print(a.index(3))
+#往数组中准确的插入数据 insert（位置，数据）
+a.insert(0,"insert")
+print(a)
+#类似于剪切的作用 吧值从数组中拿出来去别的地方用 pop()
+b =  [1,2,3,"你好",True,2,3]
+print(b)
+c = b.pop(3)
+print(b)
+print(c)
+#清空数据 clear()
+b.clear()
+print(b)
+#数组往数组里面装  extend（）
+xx = ["哈哈",123]
+b.extend(xx)
+print(b)
+#可以直接print（xx+b）
+#移除 remove（值）
+b.remove(123)
+print(b)
