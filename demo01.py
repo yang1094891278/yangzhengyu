@@ -124,3 +124,17 @@
 # #数组和字典的删除 del
 # del a["name"]
 # print(a)
+
+'''
+#练习：获取用户的个人信息 并存到字典中  个人信息有：name，age，sex
+print("请输入个人信息： ")
+a = {}
+b =input ("name:")
+a.update(name = b)
+c =input ("age:")
+a.update(age = c)
+d =input ("sex:")
+a.update(sex = d)
+print("你的个人信息：")
+print(a)
+'''
