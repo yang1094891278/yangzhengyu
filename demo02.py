@@ -122,5 +122,9 @@ print("小于60分的： ",lowchengji)
 for i in range(1,10):
     for j in range(1,i+1):
         print(i,"x",j,"=",i*j,end=" ")#end不会换行
-    print()
+    print()#换行的作用
 '''
+# #end的作用 不换行 冒号里面输入啥就显示啥
+# a = ["张三","李四","王麻子","浪晋","流云","希希","小二","二狗","周毅","亚索"]
+# for i in a:
+#     print(i,end="//")
