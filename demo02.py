@@ -116,3 +116,11 @@ for i in studentlist:
 print("大于60分的： ",highchengji)
 print("小于60分的： ",lowchengji)
 '''
+
+'''
+九九乘法表
+for i in range(1,10):
+    for j in range(1,i+1):
+        print(i,"x",j,"=",i*j,end=" ")#end不会换行
+    print()
+'''
