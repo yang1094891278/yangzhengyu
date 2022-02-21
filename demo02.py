@@ -55,6 +55,9 @@
 #     print("其他")
 
 
+
+
+
 #循环  while  for  
 #while循环
 # a = 1
@@ -63,7 +66,7 @@
 #     a = a + 1
 
 '''
-练习：10个学生的成绩，需要录入系统中。
+练习：10个学生的成绩，需要录入系统中。用while写
 学生：张三、李四、王麻子、浪晋、流云、希希、小二、二狗、周毅、亚索
 并且名字和成绩对应   而且大于60的和小于60的需要分开存放
 highchengji = {}
@@ -77,6 +80,39 @@ while a < len(studentlist):
     else:
         lowchengji[studentlist[a]] = chengji
     a = a + 1
+print("大于60分的： ",highchengji)
+print("小于60分的： ",lowchengji)
+'''
+
+
+# #for循环  原理通过遍历实现的
+# a = ["张三","李四","王老五","王麻子","周毅"]
+# for  i in a:
+#     print(i)
+# #rangr(数字)方法  
+# b = list(range(0,100)) #左闭右开  自动生成一个数列
+# print(b)
+
+# for i in range(100):#循环多少遍
+#     print(i)
+
+# #range（）控制它的变化
+# c = list(range(0,100,2))#左闭右开  自动生成一个数列 2是步进/步长
+# print(c)
+
+''' 
+练习：10个学生的成绩，需要录入系统中。  用for写
+学生：张三、李四、王麻子、浪晋、流云、希希、小二、二狗、周毅、亚索
+并且名字和成绩对应   而且大于60的和小于60的需要分开存放
+highchengji = {}
+lowchengji = {}
+studentlist = ["张三","李四","王麻子","浪晋","流云","希希","小二","二狗","周毅","亚索"]
+for i in studentlist:
+    chengji =int(input("请输入"+i+"成绩: ")) 
+    if chengji >= 60:
+        highchengji[i] = chengji
+    else:
+        lowchengji[i] = chengji
 print("大于60分的： ",highchengji)
 print("小于60分的： ",lowchengji)
 '''
