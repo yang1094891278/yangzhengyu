@@ -130,6 +130,47 @@ for i in range(1,10):
 #     print(i,end="//")
 '''
 练习1：通过print打印模拟红路灯的功能 红灯30次 绿灯35次 黄灯3次
+
+# a = 0
+# while a == 0:
+#     for i in range(31,0,-1):
+#         print("红灯还有" ,i,"s结束")
+#     for j in range(36,0,-1):
+#         print("绿灯还有" ,j,"s结束")
+#     for z in range(4,0,-1):
+#         print("黄灯还有" ,z,"s结束")
+
+
+# light = {"红灯":30,"绿灯":35,"黄灯":3}
+# while True:
+#     for i in light:
+#         for j in range(light[i]):
+#             print(i,"倒计时还有",light[i]-j,"秒结束")
+
 练习2：使用代码实现注册的功能。用户输入账号和密码，要求账号长度5-8位，密码6-12位，
 并且账号必须小写开头，储存在字典中{username：password}
+# username = input("请输入账号：")    
+# password = input("请输入密码：")
+# if len(username) >= 5 and len(username) <= 8:
+#     if username[0] in "qwertyuiopasdfghjklzxcvbnm":
+#         if len(password) >= 6 and len(password) <= 12:
+#             print("注册成功",{username:password})
+#         else:
+#             print("密码长度不符合规范，请输入6-12位的密码")
+#     else:
+#         print("账号必须是小写字母开头")
+# else:
+#     print("账号长度不符合规范，请输入5-8位的账号")
 '''
+# # continue  跳过本次循环 
+# for i in range(10):
+#     if i == 4:
+#         continue
+#     print(i)
+
+#break  跳出循环  只跳出一层循环
+# for i in range(10):
+#     if i == 4:
+#        break
+#     print(i)
+
