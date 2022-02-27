@@ -57,4 +57,20 @@ print(jiafa(4,5))
 #     print("上面代码写错了",e)
 
 #代码的单位  包 模块 类 方法 变量 
+#包分为 自带的包 和 第三方的包  都要在最上面导入 import 包名
+#很多个模块可以组成包
+#自带的
+"""
+用包要先导入 在最上方用import 
+import time#控制时间的包
+import random#随机数
+for i in range(10):
+    time.sleep(1)#控制速度
+    print(i)
+a = random.randint(100,1000)#生成随机数
+print(a)
+"""
+#第三方  在商城里下载  在终端cmd中输入
+#pip install 包名 安装   pip uninstall 包名 卸载   pip list或者pip3 list 查看安装了那些包
+#常用的第三方包 pymysql 操作数据库的 selenium web自动化的 appium app自动化的 requests接口自动化
 
