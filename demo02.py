@@ -82,6 +82,7 @@ while a < len(studentlist):
     a = a + 1
 print("大于60分的： ",highchengji)
 print("小于60分的： ",lowchengji)
+
 '''
 
 
@@ -115,6 +116,27 @@ for i in studentlist:
         lowchengji[i] = chengji
 print("大于60分的： ",highchengji)
 print("小于60分的： ",lowchengji)
+
+判断今天是几年的第几天？要考虑闰年的影响
+闰年直接理解为满足以下两个条件之一，即是闰年：
+1、年份能被4整除，且不能被100整除
+2、年份能被400整除
+# year = int(input("请输入年份："))
+# month = int(input("请输入月份："))
+# day = int(input("请输入日期："))
+# monthlist = [31,28,31,30,31,30,31,31,30,31,30,31]
+# days = 0
+# if year % 4 ==0 and year % 100 != 0 or year % 4 == 0:
+#     monthlist[1] = 29
+#     for i in range(month - 1):
+#         days = days + monthlist[i]
+#     days = days + day
+#     print("今天是今年第",days,"天")
+# else:
+#     for i in range(month - 1):
+#         days = days + monthlist[i]
+#     days = days + day
+#     print("今天是今年第",days,"天")
 '''
 
 '''
@@ -174,3 +196,8 @@ for i in range(1,10):
 #        break
 #     print(i)
 
+
+#format 的使用   按顺序使用  格式化字符串
+# tianqi = "下雨"
+# xinqing = "难过"
+# print("今天是2019年8月5号,外面在{tianqi},我很{xinqing},我很{xinqing}".format(tianqi = tianqi ,xinqing=xinqing))

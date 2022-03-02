@@ -50,7 +50,7 @@ print(jiafa(4,5))
 # except:
 #     print("上面代码写错了")
 
-# # 异常类   包->类->方法->变量 既包 含又并列 Exception处理代码报错的
+# # 异常类   包->类->方法->变量 既包含又并列 Exception处理代码报错的
 # try:
 #     print(ddd+1)
 # except Exception as e:
@@ -69,8 +69,45 @@ for i in range(10):
     print(i)
 a = random.randint(100,1000)#生成随机数
 print(a)
-"""
-#第三方  在商城里下载  在终端cmd中输入
-#pip install 包名 安装   pip uninstall 包名 卸载   pip list或者pip3 list 查看安装了那些包
-#常用的第三方包 pymysql 操作数据库的 selenium web自动化的 appium app自动化的 requests接口自动化
 
+红绿灯程序
+import time
+#from time import sleep
+
+light = {"红灯":30,"绿灯":30,"黄灯":3}
+for i in light:
+    for j in range(light[i]):
+        time.sleep(1)
+        #sleep(1)#速度
+        print("{}已运行{}秒".format(i,light[i]-j))
+"""
+# #获取当前的时间
+# import time
+# xx = time.strftime("%Y-%m-%d %H:%M:%S")
+# print(xx)
+
+
+#第三方  在商城里下载  在终端cmd中输入 pip 第三方的管理工具
+#pip install 包名 安装   pip uninstall 包名 卸载   pip list或者pip3 list 查看安装了那些包
+#常用的第三方包
+#xlrd 读取excel表 pymysql 操作数据库的 selenium web自动化的 appium app自动化的 requests接口自动化
+
+#xlrd包的练习
+import xlrd
+
+excle = xlrd.open_workbook("testdata.xlsx")#打开excle表，获取整个表的信息
+table = excle.sheet_by_name("Sheet1")#选择对应的sheet表
+Value = table.cell(1,1)#选择对应的值  第一个值是行 第二个值是列
+print(Value)
+row0 = table.row_values(0)#以行为单位
+print(row0)
+col0 = table.col_values(0)#以列为单位
+print(col0)
+
+x = table.nrows #获取一共有多少行
+y = table.ncols #获取一共有多少列
+print(x,y)
+#整个表输出
+for i in range(x):
+    row = table.row_values(i)
+    print(row)
