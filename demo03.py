@@ -50,7 +50,7 @@ print(jiafa(4,5))
 # except:
 #     print("上面代码写错了")
 
-# # 异常类   包->类->方法->变量 既包含又并列 Exception处理代码报错的
+# # 异常类   包-->模块->类->方法->变量 既包含又并列 Exception处理代码报错的
 # try:
 #     print(ddd+1)
 # except Exception as e:
@@ -131,4 +131,5 @@ time.sleep(3)
 driver.find_element_by_id("su").click()  #点击搜索按钮
 time.sleep(3)
 driver.quit()#退出浏览器
+
 """

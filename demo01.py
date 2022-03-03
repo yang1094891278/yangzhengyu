@@ -136,5 +136,3 @@ a.update(name=name,age=age,sex=sex)
 print("你的个人信息：")
 print(a)
 '''
-
-
