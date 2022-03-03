@@ -91,7 +91,7 @@ for i in light:
 #pip install 包名 安装   pip uninstall 包名 卸载   pip list或者pip3 list 查看安装了那些包
 #常用的第三方包
 #xlrd 读取excel表 pymysql 操作数据库的 selenium web自动化的 appium app自动化的 requests接口自动化
-
+"""
 #xlrd包的练习
 import xlrd
 
@@ -108,6 +108,45 @@ x = table.nrows #获取一共有多少行
 y = table.ncols #获取一共有多少列
 print(x,y)
 #整个表输出
+print("-----------------------------------------------------")
 for i in range(x):
-    row = table.row_values(i)
-    print(row)
+    print("-----------------------------------------------------")
+    rowlist = table.row_values(i)
+    for j in rowlist:
+        print(j,end = "\t|")
+    print("")
+  """
+
+"""
+#selenium 包 控制浏览器 实现网站自动化测试的功
+#下载浏览器的驱动 下载最接近的版本
+#吧驱动放到项目文件夹
+from selenium import webdriver
+import time 
+driver = webdriver.Chrome(executable_path="chromedriver.exe")#对浏览器初始化
+time.sleep(3)
+driver.get("https://baidu.com")#打开百度
+driver.find_element_by_id("kw").send_keys("小课堂") #根据id 查找输入框 输入数据
+time.sleep(3)
+driver.find_element_by_id("su").click()  #点击搜索按钮
+time.sleep(3)
+driver.quit()#退出浏览器
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
