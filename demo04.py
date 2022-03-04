@@ -3,9 +3,9 @@
 import xlrd
 
 def readexcle(exclename,sheetname):
-"""
+
 这是一个用来读取excle表格的方法
-"""
+
     excle = xlrd.open_workbook(exclename)#打开excle表，获取整个表的信息
     table = excle.sheet_by_name(sheetname)#选择对应的sheet表
     x = table.nrows #获取一共有多少行
@@ -22,3 +22,13 @@ def readexcle(exclename,sheetname):
 # xx = readexcle("yang.xlsx","yang1")
 # print(xx)
 """
+#递归
+def chufa(x):
+    x = x/2
+    if x > 10:
+        return chufa(x)
+    else:
+        return x
+
+x = 1000
+print(chufa(x))
