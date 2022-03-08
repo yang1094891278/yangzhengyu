@@ -2,8 +2,6 @@
 #特点 类的继承、重写、实例化
 #面向对象编程  就是对一个对象编写它的属性
 """  """
-from hashlib import new
-
 
 class Car:
     def __init__(self,color,lunzi,renshu,moshi):

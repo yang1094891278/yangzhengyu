@@ -34,7 +34,7 @@ driver.get("https://baidu.com")#打开百度
 # driver.window_handles()#获取当前浏览器所有的句柄
 # driver.current_window_handle()#获取当前窗口的句柄
 # #window窗口的切换  frame表单  allert弹窗
-# driver.switch_to.window
+#driver.switch_to.window
 
 # driver.find_element_by_id("kw").send_keys("小课堂") #根据id 查找输入框 输入数据
 #driver.find_element_by_name("wd").send_keys("小课堂")#根据name定位
@@ -47,13 +47,14 @@ driver.get("https://baidu.com")#打开百度
 #根据全部文字定位
 # driver.find_element_by_id("kw").clear()
 # time.sleep(2)
-# driver.find_element_by_link_text("新闻").click()
+driver.find_element_by_link_text("新闻").click()
 #根据部分文字定位
 #driver.find_element_by_partial_link_text("全国政协").click()
-# time.sleep(2)
+time.sleep(2)
 # #常见的方法
-# title = driver.title #获取网页的title
-# print(title)
+driver.switch_to.window(driver.window_handles[-1])
+title = driver.title #获取网页的title
+print(title)
 #获取定位对象的文本
 # text = driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[3]/a[1]").text
 # print(text)
